@@ -1,0 +1,10 @@
+<div class="elements">
+    <div *ngFor="let element of elements" class="element" (click)="onSelect(element.id)">
+            
+        <div class="elementTitle">{{element.title ? element.title : element.name | uppercase}}</div>
+        <div>
+            <img class="img" src="{{element.thumbnail.path}}.{{element.thumbnail.extension}}" title="{{element.title ? element.title : element.name | uppercase}}">
+        </div>
+
+    </div>
+</div>

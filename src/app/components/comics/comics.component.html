@@ -1,0 +1,5 @@
+<h1>List of comics</h1>
+
+<search [total]="total" (strFilter)="onConfirm($event)"></search>
+
+<list-elements [elements]="comics" (selected)="onSelect($event)"></list-elements>

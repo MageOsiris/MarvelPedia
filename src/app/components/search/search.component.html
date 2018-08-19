@@ -1,0 +1,12 @@
+<form class="my-5">
+    <div class="form-group">
+        <label for="filterInput">Search Filter</label>
+        <input type="text" class="form-control" id="filterInput" name="filter" [(ngModel)]="filter" />
+    </div>
+    <div class="form-group">
+        <label for="totalOutput">Total Matches</label>
+        <input type="number" id="totalOutput" class="form-control" name="total" [(ngModel)]="total" disabled="disabled" />
+    </div>
+    <button type="submit" class="btn btn-success" (click)="onConfirm()" > Confirm </button>
+    (Only displays the first twenty elements)
+</form>

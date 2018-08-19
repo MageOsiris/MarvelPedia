@@ -1,0 +1,22 @@
+<div *ngIf="isLoaded" class="elements">
+    <h2>
+        {{character.name | uppercase}}
+    </h2>
+    <div class="divImg">
+        <img class="img" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}">
+    </div>
+    <!--DESCRIPTION PART-->
+    <h4>
+        Description :
+    </h4>
+    <div *ngIf="character.description">
+        <div>
+        {{character.description}}
+        </div>
+    </div>
+    <div *ngIf="!character.description">
+        <div>
+        N/A
+        </div>
+    </div>
+</div>

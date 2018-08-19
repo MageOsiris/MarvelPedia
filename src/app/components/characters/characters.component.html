@@ -1,0 +1,5 @@
+<h1>List of characters</h1>
+
+<search [total]="total" (strFilter)="onConfirm($event)"></search>
+
+<list-elements [elements]="characters" (selected)="onSelect($event)"></list-elements>

@@ -1,0 +1,50 @@
+<div *ngIf="isLoaded">
+    <h2>
+        {{comic.title | uppercase}}
+    </h2>
+    <div class="divImg">
+        <img class="img" src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}">
+    </div>
+    <!--DESCRIPTION PART-->
+    <h4>
+        Description :
+    </h4>
+    <div *ngIf="comic.description">
+        <div>
+        {{comic.description}}
+        </div>
+    </div>
+    <div *ngIf="!comic.description">
+        <div>
+        N/A
+        </div>
+    </div>
+    <!--FORMAT PART-->
+    <h4>
+        Format :
+    </h4>
+    <div *ngIf="comic.format">
+        <div>
+        {{comic.format}}
+        </div>
+    </div>
+    <div *ngIf="!comic.format">
+        <div>
+        N/A
+        </div>
+    </div>
+    <!--NUMBER OF PAGE PART-->
+    <h4>
+        Number of page :
+    </h4>
+    <div *ngIf="comic.pageCount > 0">
+        <div>
+        {{comic.pageCount}}
+        </div>
+    </div>
+    <div *ngIf="comic.pageCount == 0">
+        <div>
+        N/A
+        </div>
+    </div>
+</div>

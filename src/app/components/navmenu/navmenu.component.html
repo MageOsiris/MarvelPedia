@@ -1,0 +1,32 @@
+<div class='main-nav'> 
+    <div class='navbar navbar-dark bg-dark'>
+        <div class="navbar-preheader">
+            <img class="navbar-preheader-image"[src]="'../../assets/images/Logo-Marvel.png'" alt="Marvel">
+        </div>  
+        <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/home']">MarvelPedia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav flex-column nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/home']">
+                        <span class='fas fa-home'></span> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/characters']">
+                        <span class='fas fa-users'></span> Characters list
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/comics']">
+                        <span class='fas fa-book'></span> Comics list
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

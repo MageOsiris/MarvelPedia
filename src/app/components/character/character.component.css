@@ -1,0 +1,13 @@
+.img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.divImg{
+    text-align: center;
+}
+
+h4{
+    margin-top: 15px;
+}
